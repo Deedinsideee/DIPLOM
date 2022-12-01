@@ -10,6 +10,7 @@ namespace DIPLOM
         public MyDbContext()
             : base("DbConnection")
         { }
+
         
 
         public DbSet<Dannie> Dannies { get; set; }
