@@ -26,19 +26,19 @@ namespace DIPLOM
 
             string whole_file = System.IO.File.ReadAllText(@way + "kek.csv");
 
-            // Разделение на строки.
+            
             whole_file = whole_file.Replace('\n', '\r');
             string[] lines = whole_file.Split(new char[] { '\r' },
                 StringSplitOptions.RemoveEmptyEntries);
 
-            // Посмотрим, сколько строк и столбцов есть.
+            
             int num_rows = lines.Length;
             int num_cols = lines[0].Split(';').Length;
 
-            // Выделите массив данных.
+           
             string[,] values = new string[num_rows, num_cols];
 
-            // Загрузите массив.
+           
             for (int r = 0; r < num_rows; r++)
             {
                 string[] line_r = lines[r].Split(';');

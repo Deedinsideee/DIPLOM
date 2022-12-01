@@ -35,8 +35,8 @@ namespace DIPLOM
             using (var context = new MyDbContext())
                 {
                 dataGridView1.DataSource = context.Dannies.ToList();
+                
                 dataGridView1.Columns[0].Visible = false;
-                dataGridView1.Columns[1].Visible = false;
                 }
                 
             }
@@ -105,6 +105,11 @@ namespace DIPLOM
         private void button1_Click(object sender, EventArgs e)
         {
             showform();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
